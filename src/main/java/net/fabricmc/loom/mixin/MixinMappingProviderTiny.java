@@ -135,6 +135,6 @@ public class MixinMappingProviderTiny extends MappingProvider {
 				new MappingMethod(methodFrom.owner, methodFrom.name, methodFrom.desc),
 				new MappingMethod(methodTo.owner, methodTo.name, methodTo.desc)
 			);
-		});
+		}, (variableFrom, variableTo) -> {});
 	}
 }
